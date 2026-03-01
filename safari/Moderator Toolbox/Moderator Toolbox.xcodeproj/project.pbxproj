@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FFF0EC02F54AF4F003F033E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF0EBF2F54AF4F003F033E /* AppDelegate.swift */; };
+		0FFF0EC42F54AF4F003F033E /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 0FFF0EC22F54AF4F003F033E /* Main.html */; };
+		0FFF0EC62F54AF4F003F033E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FFF0EC52F54AF4F003F033E /* Icon.png */; };
+		0FFF0EC82F54AF4F003F033E /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 0FFF0EC72F54AF4F003F033E /* Style.css */; };
+		0FFF0ECA2F54AF4F003F033E /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 0FFF0EC92F54AF4F003F033E /* Script.js */; };
+		0FFF0ECC2F54AF4F003F033E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF0ECB2F54AF4F003F033E /* ViewController.swift */; };
+		0FFF0ECF2F54AF4F003F033E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFF0ECD2F54AF4F003F033E /* Main.storyboard */; };
+		0FFF0ED12F54AF50003F033E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FFF0ED02F54AF50003F033E /* Assets.xcassets */; };
+		0FFF0ED82F54AF50003F033E /* Moderator Toolbox Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0FFF0ED72F54AF50003F033E /* Moderator Toolbox Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0FFF0EDD2F54AF50003F033E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFF0EDC2F54AF50003F033E /* SafariWebExtensionHandler.swift */; };
+		0FFF0EEB2F54AF50003F033E /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FFF0EE92F54AF50003F033E /* manifest.json */; };
+		0FFF0EEC2F54AF50003F033E /* data in Resources */ = {isa = PBXBuildFile; fileRef = 0FFF0EEA2F54AF50003F033E /* data */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FFF0ED92F54AF50003F033E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FFF0EB42F54AF4F003F033E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FFF0ED62F54AF50003F033E;
+			remoteInfo = "Moderator Toolbox Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0FFF0EE42F54AF50003F033E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0FFF0ED82F54AF50003F033E /* Moderator Toolbox Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0FFF0EBC2F54AF4F003F033E /* Moderator Toolbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moderator Toolbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FFF0EBF2F54AF4F003F033E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0FFF0EC32F54AF4F003F033E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		0FFF0EC52F54AF4F003F033E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0FFF0EC72F54AF4F003F033E /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		0FFF0EC92F54AF4F003F033E /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		0FFF0ECB2F54AF4F003F033E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FFF0ECE2F54AF4F003F033E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FFF0ED02F54AF50003F033E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FFF0ED22F54AF50003F033E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FFF0ED72F54AF50003F033E /* Moderator Toolbox Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Moderator Toolbox Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FFF0EDC2F54AF50003F033E /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		0FFF0EDE2F54AF50003F033E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FFF0EE92F54AF50003F033E /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../build/safari/manifest.json; sourceTree = "<group>"; };
+		0FFF0EEA2F54AF50003F033E /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../../../build/safari/data; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FFF0EB92F54AF4F003F033E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FFF0ED42F54AF50003F033E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FFF0EB32F54AF4F003F033E = {
+			isa = PBXGroup;
+			children = (
+				0FFF0EBE2F54AF4F003F033E /* Moderator Toolbox */,
+				0FFF0EDB2F54AF50003F033E /* Moderator Toolbox Extension */,
+				0FFF0EBD2F54AF4F003F033E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FFF0EBD2F54AF4F003F033E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FFF0EBC2F54AF4F003F033E /* Moderator Toolbox.app */,
+				0FFF0ED72F54AF50003F033E /* Moderator Toolbox Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FFF0EBE2F54AF4F003F033E /* Moderator Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				0FFF0EBF2F54AF4F003F033E /* AppDelegate.swift */,
+				0FFF0ECB2F54AF4F003F033E /* ViewController.swift */,
+				0FFF0ECD2F54AF4F003F033E /* Main.storyboard */,
+				0FFF0ED02F54AF50003F033E /* Assets.xcassets */,
+				0FFF0ED22F54AF50003F033E /* Info.plist */,
+				0FFF0EC12F54AF4F003F033E /* Resources */,
+			);
+			path = "Moderator Toolbox";
+			sourceTree = "<group>";
+		};
+		0FFF0EC12F54AF4F003F033E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FFF0EC22F54AF4F003F033E /* Main.html */,
+				0FFF0EC52F54AF4F003F033E /* Icon.png */,
+				0FFF0EC72F54AF4F003F033E /* Style.css */,
+				0FFF0EC92F54AF4F003F033E /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0FFF0EDB2F54AF50003F033E /* Moderator Toolbox Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0FFF0EE82F54AF50003F033E /* Resources */,
+				0FFF0EDC2F54AF50003F033E /* SafariWebExtensionHandler.swift */,
+				0FFF0EDE2F54AF50003F033E /* Info.plist */,
+			);
+			path = "Moderator Toolbox Extension";
+			sourceTree = "<group>";
+		};
+		0FFF0EE82F54AF50003F033E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FFF0EE92F54AF50003F033E /* manifest.json */,
+				0FFF0EEA2F54AF50003F033E /* data */,
+			);
+			name = Resources;
+			path = "Moderator Toolbox Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FFF0EBB2F54AF4F003F033E /* Moderator Toolbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FFF0EE52F54AF50003F033E /* Build configuration list for PBXNativeTarget "Moderator Toolbox" */;
+			buildPhases = (
+				0FFF0EB82F54AF4F003F033E /* Sources */,
+				0FFF0EB92F54AF4F003F033E /* Frameworks */,
+				0FFF0EBA2F54AF4F003F033E /* Resources */,
+				0FFF0EE42F54AF50003F033E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FFF0EDA2F54AF50003F033E /* PBXTargetDependency */,
+			);
+			name = "Moderator Toolbox";
+			packageProductDependencies = (
+			);
+			productName = "Moderator Toolbox";
+			productReference = 0FFF0EBC2F54AF4F003F033E /* Moderator Toolbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FFF0ED62F54AF50003F033E /* Moderator Toolbox Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FFF0EE12F54AF50003F033E /* Build configuration list for PBXNativeTarget "Moderator Toolbox Extension" */;
+			buildPhases = (
+				0FFF0ED32F54AF50003F033E /* Sources */,
+				0FFF0ED42F54AF50003F033E /* Frameworks */,
+				0FFF0ED52F54AF50003F033E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moderator Toolbox Extension";
+			packageProductDependencies = (
+			);
+			productName = "Moderator Toolbox Extension";
+			productReference = 0FFF0ED72F54AF50003F033E /* Moderator Toolbox Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FFF0EB42F54AF4F003F033E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					0FFF0EBB2F54AF4F003F033E = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					0FFF0ED62F54AF50003F033E = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = 0FFF0EB72F54AF4F003F033E /* Build configuration list for PBXProject "Moderator Toolbox" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FFF0EB32F54AF4F003F033E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0FFF0EBD2F54AF4F003F033E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FFF0EBB2F54AF4F003F033E /* Moderator Toolbox */,
+				0FFF0ED62F54AF50003F033E /* Moderator Toolbox Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FFF0EBA2F54AF4F003F033E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFF0EC62F54AF4F003F033E /* Icon.png in Resources */,
+				0FFF0ECF2F54AF4F003F033E /* Main.storyboard in Resources */,
+				0FFF0ECA2F54AF4F003F033E /* Script.js in Resources */,
+				0FFF0EC42F54AF4F003F033E /* Main.html in Resources */,
+				0FFF0ED12F54AF50003F033E /* Assets.xcassets in Resources */,
+				0FFF0EC82F54AF4F003F033E /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FFF0ED52F54AF50003F033E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFF0EEC2F54AF50003F033E /* data in Resources */,
+				0FFF0EEB2F54AF50003F033E /* manifest.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FFF0EB82F54AF4F003F033E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFF0ECC2F54AF4F003F033E /* ViewController.swift in Sources */,
+				0FFF0EC02F54AF4F003F033E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FFF0ED32F54AF50003F033E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFF0EDD2F54AF50003F033E /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FFF0EDA2F54AF50003F033E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FFF0ED62F54AF50003F033E /* Moderator Toolbox Extension */;
+			targetProxy = 0FFF0ED92F54AF50003F033E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FFF0EC22F54AF4F003F033E /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FFF0EC32F54AF4F003F033E /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		0FFF0ECD2F54AF4F003F033E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FFF0ECE2F54AF4F003F033E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FFF0EDF2F54AF50003F033E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FFF0EE02F54AF50003F033E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0FFF0EE22F54AF50003F033E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Moderator Toolbox Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Moderator Toolbox Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toolbox-team.moderator-toolbox.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0FFF0EE32F54AF50003F033E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Moderator Toolbox Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Moderator Toolbox Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toolbox-team.moderator-toolbox.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0FFF0EE62F54AF50003F033E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Moderator Toolbox/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Moderator Toolbox";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toolbox-team.moderator-toolbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0FFF0EE72F54AF50003F033E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Moderator Toolbox/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Moderator Toolbox";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toolbox-team.moderator-toolbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FFF0EB72F54AF4F003F033E /* Build configuration list for PBXProject "Moderator Toolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FFF0EDF2F54AF50003F033E /* Debug */,
+				0FFF0EE02F54AF50003F033E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FFF0EE12F54AF50003F033E /* Build configuration list for PBXNativeTarget "Moderator Toolbox Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FFF0EE22F54AF50003F033E /* Debug */,
+				0FFF0EE32F54AF50003F033E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FFF0EE52F54AF50003F033E /* Build configuration list for PBXNativeTarget "Moderator Toolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FFF0EE62F54AF50003F033E /* Debug */,
+				0FFF0EE72F54AF50003F033E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FFF0EB42F54AF4F003F033E /* Project object */;
+}
