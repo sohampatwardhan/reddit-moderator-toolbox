@@ -161,7 +161,9 @@ async function checkLoadConditions (tries = 3) {
     }
 
     // Write a setting and read back its value, if this fails something is wrong
-    let echoValue = Math.random();
+    // Use a UUID string rather than a float - floats can lose precision through
+    // JSON serialization in some JS engines (e.g. Safari/JavaScriptCore).
+    let echoValue = crypto.randomUUID();
     try {
         await setSettingAsync('Utils', 'echoTest', echoValue);
     } catch (error) {
