@@ -13,5 +13,20 @@ function handleWebNavigation ({tabId, frameId}) {
 }
 
 const filter = {url: [{hostContains: 'reddit.com'}]};
-browser.webNavigation.onReferenceFragmentUpdated.addListener(handleWebNavigation, filter);
-browser.webNavigation.onHistoryStateUpdated.addListener(handleWebNavigation, filter);
+
+// Some browsers (Safari) do not support all webNavigation events or the url
+// filter parameter. Use optional chaining and fall back without a filter if
+// the filtered addListener call throws.
+for (const event of [
+    browser.webNavigation.onReferenceFragmentUpdated,
+    browser.webNavigation.onHistoryStateUpdated,
+]) {
+    if (!event) {
+        continue;
+    }
+    try {
+        event.addListener(handleWebNavigation, filter);
+    } catch {
+        event.addListener(handleWebNavigation);
+    }
+}
